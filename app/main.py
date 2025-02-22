@@ -26,7 +26,7 @@ def create_ambulance(data: schemas.AmbulanceCreate, db: Session = Depends(get_db
     db.add(ambulance)
     db.commit()
     db.refresh(ambulance)
-    location_shape = to_shape(ambulance.location)  # Convert to Shapely Point
+    location_shape = to_shape(ambulance.location)  # Convert to Shapely Point. Fomat (lat, lon).
     location_tuple = (location_shape.x, location_shape.y)  # Extract as tuple
     return {"id": ambulance.id, "name": ambulance.name, "location": location_tuple}
 
