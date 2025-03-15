@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll created by me!"
+title:  "Welcome to Jekyll created by me inside devblog!"
 date:   2025-03-15 20:40:28 +0600
 categories: jekyll update
 ---
